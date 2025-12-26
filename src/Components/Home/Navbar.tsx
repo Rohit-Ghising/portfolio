@@ -4,6 +4,10 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
+import TextField from "@mui/material/TextField";
+import InputAdornment from "@mui/material/InputAdornment";
+import IconButton from "@mui/material/IconButton";
+import { Stack } from "@mui/system";
 
 export default function Navbar() {
   return (
@@ -71,17 +75,50 @@ export default function Navbar() {
               color: "white",
             }}
           >
-            Blog
+            Blogs
           </Typography>
           {/*  */}
-          <Box>
-            <Typography color="white" sx={{}}>
-              <input type="text" />
-              <SearchIcon />
-              <InstagramIcon />
-              <GitHubIcon />
-              <LinkedInIcon />
-            </Typography>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <TextField
+              sx={{
+                "& .MuiOutlinedInput-root": {
+                  borderRadius: "24px",
+                  paddingLeft: "16px",
+                  backgroundColor: "white",
+                },
+                "& .MuiInputBase-input": {
+                  padding: "6px 0",
+                },
+              }}
+              variant="outlined"
+              fullWidth
+              slotProps={{
+                input: {
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton edge="end">
+                        <SearchIcon />
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                },
+              }}
+            />
+            <Stack
+              direction="row"
+              spacing={"2px"}
+              sx={{ textColor: "#12F7D6" }}
+            >
+              <IconButton>
+                <InstagramIcon sx={{ color: "#12F7D6" }} />
+              </IconButton>
+              <IconButton>
+                <GitHubIcon sx={{ color: "#12F7D6" }} />
+              </IconButton>
+              <IconButton>
+                <LinkedInIcon sx={{ color: "#12F7D6" }} />
+              </IconButton>
+            </Stack>
           </Box>
         </Box>
       </Box>
