@@ -23,7 +23,8 @@ export default function Navbar() {
         sx={{
           alignItems: "center",
           display: "flex",
-          justifyContent: "space-between",
+          paddingX: "",
+
           paddingY: "64px",
         }}
       >
@@ -52,12 +53,20 @@ export default function Navbar() {
             Rohit Ghising
           </Typography>
         </Box>
-        <Box sx={{ gap: "32px", display: "flex" }}>
+        {/* Navbar */}
+        <Box
+          sx={{
+            gap: "32px",
+            display: "flex",
+            marginLeft: "auto",
+            justifyContent: "flex-start",
+          }}
+        >
           <Typography
             component="a"
             sx={{
               fontFamily: "'IBM Plex Mono', monospace",
-              fontWeight: "400px", // Medium
+              fontWeight: 400, // Medium
               fontSize: "24px",
               lineHeight: "32px",
               color: "#12F7D6",
@@ -78,7 +87,7 @@ export default function Navbar() {
             Blogs
           </Typography>
           {/*  */}
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "64px" }}>
             <TextField
               sx={{
                 "& .MuiOutlinedInput-root": {
@@ -104,19 +113,15 @@ export default function Navbar() {
                 },
               }}
             />
-            <Stack
-              direction="row"
-              spacing={"2px"}
-              sx={{ textColor: "#12F7D6" }}
-            >
+            <Stack direction="row" sx={{ textColor: "#12F7D6", gap: "32px" }}>
               <IconButton>
-                <InstagramIcon sx={{ color: "#12F7D6" }} />
+                <InstagramIcon sx={{ color: "#12F7D6", fontSize: "20px" }} />
               </IconButton>
               <IconButton>
-                <GitHubIcon sx={{ color: "#12F7D6" }} />
+                <GitHubIcon sx={{ color: "#12F7D6", fontSize: "20px" }} />
               </IconButton>
               <IconButton>
-                <LinkedInIcon sx={{ color: "#12F7D6" }} />
+                <LinkedInIcon sx={{ color: "#12F7D6", fontSize: 20 }} />
               </IconButton>
             </Stack>
           </Box>
