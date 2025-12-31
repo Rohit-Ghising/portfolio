@@ -346,19 +346,21 @@ export default function HeroSection() {
           </Box>
           <Box
             sx={{
-              ps: "32px",
+              px: "32px",
+
               py: "48px",
               borderRadius: "80px",
               background: "#1A1E23",
               display: "flex",
               flexDirection: "column",
               gap: "48px",
+              height: "100%",
             }}
           >
-            <Box sx={{ display: "flex", flexDirection: "row", gap: "16px" }}>
+            <Stack direction={"row"} gap={2}>
               <Typography
                 sx={{
-                  fontFamily: "IBM Plex Mono', monospace",
+                  fontFamily: "'IBM Plex Mono', monospace",
                   fontSize: "48px",
                   lineHeight: "62px",
                   color: "#12F7D6",
@@ -366,8 +368,61 @@ export default function HeroSection() {
               >
                 4
               </Typography>
-              <Typography>Programming language</Typography>
-            </Box>
+              <Typography
+                sx={{
+                  fontFamily: "'IBM Plex Mono', monospace",
+                  fontSize: "16px",
+                  lineHeight: "20px",
+                  color: "white",
+                }}
+              >
+                Programming <br /> language
+              </Typography>
+            </Stack>
+            <Stack direction={"row"} gap={2}>
+              <Typography
+                sx={{
+                  fontFamily: "'IBM Plex Mono', monospace",
+                  fontSize: "48px",
+                  lineHeight: "62px",
+                  color: "#12F7D6",
+                }}
+              >
+                4
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "'IBM Plex Mono', monospace",
+                  fontSize: "16px",
+                  lineHeight: "20px",
+                  color: "white",
+                }}
+              >
+                Programming <br /> language
+              </Typography>
+            </Stack>
+            <Stack direction={"row"} gap={2}>
+              <Typography
+                sx={{
+                  fontFamily: "'IBM Plex Mono', monospace",
+                  fontSize: "48px",
+                  lineHeight: "62px",
+                  color: "#12F7D6",
+                }}
+              >
+                4
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "'IBM Plex Mono', monospace",
+                  fontSize: "16px",
+                  lineHeight: "20px",
+                  color: "white",
+                }}
+              >
+                Programming <br /> language
+              </Typography>
+            </Stack>
           </Box>
         </Box>
       </Box>

@@ -1,3 +1,4 @@
+import About from "./About";
 import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
 
@@ -6,6 +7,7 @@ export default function HomeLayout() {
     <div>
       <Navbar />
       <HeroSection />
+      <About />
     </div>
   );
 }
