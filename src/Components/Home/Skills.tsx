@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import DesktopWindowsIcon from "@mui/icons-material/DesktopWindows";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import html from "../../assests/images/html5.png";
+import line2 from "../../assests/images/Line 22.png";
 
 export default function Skills() {
   return (
@@ -74,10 +75,17 @@ export default function Skills() {
                 justifyContent: "center",
               }}
             >
-              Title
+              Skills
             </Typography>
-
-            {/* <img src={line2} alt="" className="" /> */}
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img src={line2} alt="" className=" h-[12px] w-[148px]" />
+            </Box>
           </Box>
           <Typography>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
