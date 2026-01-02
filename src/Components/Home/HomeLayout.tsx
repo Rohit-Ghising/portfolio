@@ -1,5 +1,6 @@
 import About from "./About";
 import Blogs from "./Blogs";
+import Contact from "./Contact";
 import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
 import Skills from "./Skills";
@@ -13,7 +14,7 @@ export default function HomeLayout() {
       <About />
       <Skills />
       <Works />
-      <Blogs />
+      <Contact />
     </div>
   );
 }
