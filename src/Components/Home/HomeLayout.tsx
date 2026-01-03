@@ -14,6 +14,7 @@ export default function HomeLayout() {
       <About />
       <Skills />
       <Works />
+      <Blogs />
       <Contact />
     </div>
   );
