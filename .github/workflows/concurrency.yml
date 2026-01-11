@@ -1,0 +1,40 @@
+name: Caching and Artifacts
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-react-app:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: deploy
+      cancel-in-progress: true
+      
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+       
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React App
+        run: npm run build
+
+      - name: Deploy App
+        run : echo "Deploy App"
+          
+          
+        
+      
+
+
+
+
+
+
